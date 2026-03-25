@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form in javaScript</title>
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 flex justify-center items-center min-h-screen">
+
+        
+  <div class="bg-gray-700 max-w-sm p-8 shadow-2xl rounded-lg w-full  "> 
+  <h1 class="text-red-100 font-medium">Registration Form</h1>
+      <form >
+        <!-- class="min-h-screen" -->
+         <div class="mb-4 p-2">
+        <label class="text-sm text-gray-300 font-md block" for="nameInput" >Full Name</label>
+        <input class="bg-gray-600 w-full border-gray-700 px-3 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500" type="text"  id="nameInput" placeholder="enter your full name">
+          <p class="my-4" id="nameResult"></p>
+      </div>
+
+      <div class="mb-4 p-2">
+        <label class="text-sm text-gray-300 font-md block" for="userNameInput" >Create Username</label>
+        <input class="bg-gray-600 w-full border-gray-700 px-3 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500" type="text"  id="userNameInput" placeholder="create your username">
+         <p class="my-4" id="userNameResult"></p>
+      </div>
+
+       <div class="mb-4 p-2">
+        <label class="text-sm text-gray-300 font-md block" for="emailInput" >Email</label>
+        <input class="bg-gray-600 w-full border-gray-700 px-3 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500" type="email"  id="emailInput" placeholder="enter your email address">
+          <p class="my-4" id="emailResult"></p>
+      </div>
+      
+
+<div class="mb-4 p-2">
+        <label class="text-sm text-gray-300 font-md block" for="creatPasswordInput" >Password</label>
+        <input class="bg-gray-600 w-full border-gray-700 px-3 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500" type="password"  id="passwordInput" placeholder="create your password">
+
+        <span id="togglePassword" style="cursor:pointer; position: relative; left: 280px; top: -30px;">👁️</span>
+
+          <p class="my-4" id="passwordResult"></p>
+      </div>
+
+      
+    <div class="mb-4 p-2">
+        <label class="text-sm text-gray-300 font-md block" for="confirmPasswordInput" >Confirm Password</label>
+        <input class="bg-gray-600 w-full border-gray-700 px-3 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500" type="password"  id="confirmPasswordInput" placeholder="confirm your password">
+          <p class="my-4" id="confirmPasswordResult"></p>
+      </div>
+
+
+
+         <button class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-300 shadow-2xl  " type="submit" id="regBtn" disabled>Register</button>
+         <p clas="my-4" id="successMessage"></p>
+      </form>
+  </div>
+</body>
+<script src="./tailwind.js"></script>
+
+<script src="./script.js"></script>
+</html>
